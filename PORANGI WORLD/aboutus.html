@@ -1,55 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about Porangi World, our story, mission, and the experience behind our authentic global food brand." />
+    <title>About Us | Porangi World</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-     <center><h1>Welcome to Porangi World</h1></center><br>
-    <hr>
-    <center>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
-        <a href="images.html">Location</a>
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html" class="active">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+            <a href="location.html">Location</a>
+        </nav>
+    </header>
 
-    </center>
-    <hr>
+    <main class="page-shell">
+        <section class="hero-card about-hero">
+            <div class="about-hero-copy">
+                <p class="eyebrow">Our story</p>
+                <h1>Porangi World</h1>
+                <p>Born in Alexandra, inspired by global flavours, and built around warm hospitality, Porangi World brings people together through memorable food experiences.</p>
+            </div>
+            <div class="about-hero-badge">
+                <strong>Since 2021</strong>
+                <span>Authentic flavours • Local heart • Global taste</span>
+            </div>
+        </section>
 
-    <h2>Our Story</h2>
-    <p>Porangi World was founded in 2021 with a clear vision: to use food as a bridge between cultures.
-        We noticed that people were craving aunthentic, global flavors but didn't always have the means to travel.
-        So we brought the world to Alexandra. Our goal was to create a welcoming place where you can travel
-        the world without leaving our seats. We carefully source recipes from around the globe and prepare them
-        with fresh,local ingredients. What started as a small kitchen has now grown into a celebration
-        of diversity, taste, and togetherness.
-    </p>
-    
-    <h2>Our Mission</h2>
-    <p>
-        To bring people together through bold, aunthentic, and affordable global cuisine.
-        We are committed to celebrating cultural diversity, sopporting local suppliers, 
-        and creating a fun, welcoming space where everyone feels at home.
-    </p>
-    <br><br><br>
-    <hr>
-    <center>
-        <!--this is a video in Porangi_World -->
-        <video width="400" controls >
-            <source src="VID_20260814_015149_726.mp4" type="video/mp4">
-    </center> 
-    <center>
-        <p>&copy;Porangi World / 083 228 0042/ @porangi_world</p>
-    </center>
+        <section class="content-grid about-grid">
+            <article class="panel">
+                <h2>Our Story</h2>
+                <p>Porangi World was founded in 2021 with a clear vision: to use food as a bridge between cultures. We noticed that people were craving authentic, global flavours but did not always have the means to travel. So we brought the world to Alexandra.</p>
+                <p>Our goal was to create a welcoming space where guests can explore international tastes, enjoy vibrant dishes, and feel part of a community built on connection and celebration.</p>
+                <p>From humble beginnings, the brand grew into a foodie destination known for bold flavours, creativity, and a warm, friendly atmosphere.</p>
+            </article>
 
+            <article class="panel">
+                <h2>Our Mission</h2>
+                <p>To bring people together through bold, authentic, and affordable global cuisine. We are committed to celebrating cultural diversity, supporting local suppliers, and creating a fun and welcoming environment where everyone feels at home.</p>
+                <ul class="feature-list">
+                    <li>Authentic menu inspiration from around the world</li>
+                    <li>Fresh ingredients and quality preparation</li>
+                    <li>Friendly customer experience in every visit</li>
+                    <li>Community-driven hospitality and local pride</li>
+                </ul>
+            </article>
+        </section>
 
+        <section class="values-section">
+            <div class="panel value-card">
+                <h3>Our Values</h3>
+                <p>We believe good food should be memorable, welcoming, and accessible. Every meal reflects our passion for flavour, creativity, and togetherness.</p>
+            </div>
+            <div class="panel value-card">
+                <h3>Our Promise</h3>
+                <p>To deliver an experience that is exciting, comforting, and full of personality — one plate at a time.</p>
+            </div>
+            <div class="panel value-card">
+                <h3>Our Community</h3>
+                <p>We celebrate Alexandra and the people who make our brand feel alive, vibrant, and truly local.</p>
+            </div>
+        </section>
 
+        <section class="panel media-panel">
+            <h2>Watch our story</h2>
+            <div class="video-wrap">
+                <video controls>
+                    <source src="VID_20260814_015149_726.mp4" type="video/mp4" />
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <p>&copy; Porangi World / 083 228 0042 / @porangi_world</p>
+    </footer>
 
-
-
-    
+    <script src="css/script.js"></script>
 </body>
 </html>

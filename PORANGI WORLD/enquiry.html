@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Request a custom Porangi World quote, menu estimate, or event catering enquiry." />
+    <title>Enquiry | Porangi World</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="css/script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="enquiry.html" class="active">Enquiry</a>
+            <a href="contact.html">Contact</a>
+            <a href="location.html">Location</a>
+        </nav>
+        <div class="search-wrap">
+            <input type="search" id="siteSearch" data-live-search placeholder="Search our menu, story, and services..." aria-label="Search the page" />
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero-card searchable">
+            <p class="eyebrow">Easy estimates</p>
+            <h1>Build your Porangi World order</h1>
+            <p>Choose your favourite flavours and let us calculate a quick estimate for your next event or treat.</p>
+        </section>
+
+        <section class="content-grid">
+            <div class="panel searchable">
+                <h2>Quick quote calculator</h2>
+                <form id="enquiryForm" novalidate>
+                    <div class="form-grid">
+                        <label>
+                            Full name
+                            <input type="text" name="customerName" id="customerName" placeholder="Your name" required />
+                        </label>
+                        <label>
+                            Email address
+                            <input type="email" name="customerEmail" id="customerEmail" placeholder="you@example.com" required />
+                        </label>
+                    </div>
+
+                    <div class="estimate-items">
+                        <div class="estimate-item">
+                            <label>Hot Mess Express</label>
+                            <div class="inline-row">
+                                <input type="number" min="0" value="0" data-price="120" data-name="Hot Mess Express" />
+                                <span>R120</span>
+                            </div>
+                        </div>
+                        <div class="estimate-item">
+                            <label>Astrofries</label>
+                            <div class="inline-row">
+                                <input type="number" min="0" value="0" data-price="100" data-name="Astrofries" />
+                                <span>R100</span>
+                            </div>
+                        </div>
+                        <div class="estimate-item">
+                            <label>Breakfast Vibes</label>
+                            <div class="inline-row">
+                                <input type="number" min="0" value="0" data-price="80" data-name="Breakfast Vibes" />
+                                <span>R80</span>
+                            </div>
+                        </div>
+                        <div class="estimate-item">
+                            <label>6 Chicken Wings & Fries</label>
+                            <div class="inline-row">
+                                <input type="number" min="0" value="0" data-price="100" data-name="Wings Combo" />
+                                <span>R100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="summary-box">
+                        <div class="summary-line"><span>Subtotal</span><strong id="subtotalValue">R0.00</strong></div>
+                        <div class="summary-line"><span>Delivery fee</span><strong id="deliveryValue">R0.00</strong></div>
+                        <div class="summary-line total"><span>Total estimate</span><strong id="totalValue">R0.00</strong></div>
+                    </div>
+
+                    <button type="submit">Get my estimate</button>
+                </form>
+            </div>
+
+            <aside class="panel searchable">
+                <h2>Response</h2>
+                <div id="estimateResponse" class="response-box" aria-live="polite">
+                    Fill in the form to generate a price estimate for your order.
+                </div>
+            </aside>
+        </section>
+
+        <section class="gallery-section searchable">
+            <h2>Food gallery</h2>
+            <div class="gallery-grid">
+                <button class="gallery-item lightbox-trigger" type="button" data-lightbox="images/Screenshot_20260814_105418_Instagram.jpg" data-title="Loaded fries special">
+                    <img src="images/Screenshot_20260814_105418_Instagram.jpg" alt="Loaded fries special" />
+                </button>
+                <button class="gallery-item lightbox-trigger" type="button" data-lightbox="images/Screenshot_20260814_105445_Instagram.jpg" data-title="Signature meal">
+                    <img src="images/Screenshot_20260814_105445_Instagram.jpg" alt="Signature meal" />
+                </button>
+                <button class="gallery-item lightbox-trigger" type="button" data-lightbox="images/Screenshot_20260814_105349_Instagram.jpg" data-title="Wings and fries combo">
+                    <img src="images/Screenshot_20260814_105349_Instagram.jpg" alt="Wings and fries combo" />
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" type="button" aria-label="Close gallery image">×</button>
+        <img id="lightboxImage" src="" alt="Expanded gallery view" />
+        <p id="lightboxCaption"></p>
+    </div>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Porangi World • Taste the world, one plate at a time.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

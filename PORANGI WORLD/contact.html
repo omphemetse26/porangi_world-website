@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porangi World - Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-     <center><h1>Welcome to Porangi World</h1></center><br>
-    <hr>
-    <center>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
-        <a href="images.html">Location</a>
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="location.html">Location</a>
+        </nav>
+    </header>
 
-    </center>
-    <h2>Get In Touch</h2>
-    <p>
-        <b>Phone:</b> <a href="tel:0832280042">083 228 0042</a><br>
-        <b>WhatsApp:</b><a href="https://wa.me/27832280042">Click to WhatsApp</a><br>
-        <b>Instagram:</b><a href="https://instagram.com/porangi_world">@porangi_world</a><br>
-        <b>Email:</b>info@porangi.world
-    </p>
-    <main>
-        <!--this is customers write about their experience and they also tell us where to improve as a business-->
-        <h2>Feedback</h2>
-        <p>We would love to hear from you!</p>
-        <form method="post" action=""></form>
-        <label>Whats on your mind?</label>
-        <input type="text" name="comment" placeholder="Enter your whats on your mind?"
-            
+    <main class="page-shell">
+        <section class="hero-card">
+            <p class="eyebrow">Get in touch</p>
+            <h1>We would love to hear from you</h1>
+            <p>Contact Porangi World for orders, feedback, or event enquiries.</p>
+        </section>
+
+        <section class="content-grid">
+            <div class="panel">
+                <h2>Contact details</h2>
+                <p><strong>Phone:</strong> <a href="tel:0832280042">083 228 0042</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/27832280042" target="_blank" rel="noopener">Click to WhatsApp</a></p>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/porangi_world" target="_blank" rel="noopener">@porangi_world</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@porangi.world">info@porangi.world</a></p>
+            </div>
+
+            <div class="panel">
+                <h2>Send a message</h2>
+                <form id="contactForm" novalidate>
+                    <label>
+                        Your name
+                        <input type="text" id="contactName" name="contactName" placeholder="Enter your name" required />
+                    </label>
+                    <label>
+                        Email address
+                        <input type="email" id="contactEmail" name="contactEmail" placeholder="you@example.com" required />
+                    </label>
+                    <label>
+                        Message
+                        <textarea id="contactMessage" name="contactMessage" placeholder="Your message here..." required></textarea>
+                    </label>
+                    <button type="submit">Send message</button>
+                </form>
+                <div id="contactResponse" class="response-box" aria-live="polite"></div>
+            </div>
+        </section>
     </main>
 
+    <footer class="site-footer">
+        <p>© Porangi World</p>
+    </footer>
 
+    <script src="css/script.js"></script>
 </body>
 </html>
